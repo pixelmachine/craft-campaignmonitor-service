@@ -1,3 +1,7 @@
+## 2.0.0 - 2024-02-15
+
+* Initial Craft 4 compatibility update
+
 ## 1.0.13 - 2020-11-20
 
 * Returning result->Message as reason for template
