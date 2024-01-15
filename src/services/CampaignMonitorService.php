@@ -41,7 +41,7 @@ class CampaignMonitorService extends Component
     /**
      * @inheritdoc
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
 
@@ -53,7 +53,7 @@ class CampaignMonitorService extends Component
     /*
      * @return mixed
      */
-    public function getLists()
+    public function getLists(): array
     {
         try {
             $auth = [
@@ -91,7 +91,7 @@ class CampaignMonitorService extends Component
         }
     }
 
-    public function getListStats($listId = '')
+    public function getListStats($listId = ''): array
     {
         try {
             $auth = [
@@ -125,7 +125,7 @@ class CampaignMonitorService extends Component
         }
     }
 
-    public function getList($listId = '')
+    public function getList($listId = ''): array
     {
         try {
             $auth = [
@@ -159,7 +159,8 @@ class CampaignMonitorService extends Component
         }
     }
 
-    public function getActiveSubscribers($listId = '', $params = []) {
+    public function getActiveSubscribers($listId = '', $params = []): array
+    {
         try {
             $auth = [
                 'api_key' => $this->apiKey,
@@ -192,7 +193,8 @@ class CampaignMonitorService extends Component
         }
     }
 
-    public function getListsForEmail($email = '', $params = []) {
+    public function getListsForEmail($email = '', $params = []): array 
+    {
         $settings = CmService::$plugin->getSettings();
 
         try {
@@ -228,7 +230,7 @@ class CampaignMonitorService extends Component
     /*
      * @return mixed
      */
-    public function importSubscribers($listId = '', $subscribers = array())
+    public function importSubscribers($listId = '', $subscribers = array()): array
     {
         try {
             $auth = [
@@ -265,7 +267,8 @@ class CampaignMonitorService extends Component
     /*
      * @return mixed
      */
-    public function updateSubscriber($listId = '', $oldEmail = '', $email = '', $subscriber = array()) {
+    public function updateSubscriber($listId = '', $oldEmail = '', $email = '', $subscriber = array()): array
+    {
         try {
             $auth = [
                 'api_key' => $this->apiKey,
@@ -301,7 +304,7 @@ class CampaignMonitorService extends Component
     /*
      * @return mixed
      */
-    public function addSubscriber($listId = '', $subscriber = array())
+    public function addSubscriber($listId = '', $subscriber = array()): array
     {
         try {
             $auth = [
@@ -335,7 +338,7 @@ class CampaignMonitorService extends Component
         }
     }
 
-    public function unsubSubscriber($listId = '', $email = '')
+    public function unsubSubscriber($listId = '', $email = ''): array
     {
         try {
             $auth = [
@@ -373,7 +376,7 @@ class CampaignMonitorService extends Component
      * @return mixed
      */
     // public function createCampaign($campaign = array())
-    public function createCampaign()
+    public function createCampaign(): array
     {
         $campaign = array(
             'Subject' => 'Campaign Subject',
