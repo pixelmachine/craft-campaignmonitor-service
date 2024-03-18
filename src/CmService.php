@@ -11,6 +11,7 @@ use clearbold\cmservice\models\Settings;
 
 use Craft;
 use craft\base\Plugin;
+use craft\base\Model;
 
 /**
  * Campaign Monitor Service is an API wrapper and settings manager for Campaign Monitor plugins for Craft.
@@ -20,7 +21,7 @@ use craft\base\Plugin;
  */
 class CmService extends Plugin
 {
-    public $hasCpSettings = true;
+    public bool $hasCpSettings = true;
     public static $plugin;
 
     // Public Methods
@@ -45,12 +46,12 @@ class CmService extends Plugin
         );
     }
 
-    protected function createSettingsModel()
+    protected function createSettingsModel(): ?Model
     {
-        return new \clearbold\cmservice\models\Settings();
+        return new Settings();
     }
 
-    protected function settingsHtml()
+    protected function settingsHtml(): string
     {
         return \Craft::$app->getView()->renderTemplate('cm-service/settings', [
             'settings' => $this->getSettings()
