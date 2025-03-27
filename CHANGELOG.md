@@ -1,3 +1,7 @@
+## 3.0.0 - 2025-03-26
+
+* Initial Craft 5 compatibility update
+
 ## 2.0.0 - 2024-02-15
 
 * Initial Craft 4 compatibility update
