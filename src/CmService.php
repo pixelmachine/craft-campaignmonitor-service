@@ -33,7 +33,7 @@ class CmService extends Plugin
         self::$plugin = $this;
 
         $this->setComponents([
-            'campaignmonitor' => \clearbold\cmservice\services\CampaignMonitorService::class,
+            'campaignmonitor' => CampaignMonitorService::class,
         ]);
 
         Craft::info(
