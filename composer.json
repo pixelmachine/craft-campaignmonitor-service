@@ -1,5 +1,5 @@
 {
-    "name": "clearbold/craft-campaignmonitor-service",
+    "name": "pixelmachine/craft-campaignmonitor-service",
     "description": "Campaign Monitor Service is an API wrapper and settings manager for Campaign Monitor plugins for Craft.",
     "version": "3.0.0",
     "type": "craft-plugin",
