@@ -35,7 +35,7 @@
     },
     "extra": {
         "name": "Campaign Monitor Service (PM)",
-        "handle": "cm-service-pm",
+        "handle": "cm-service",
         "hasCpSettings": true,
         "developer": "Clearbold",
         "developerUrl": "http://clearbold.com/",
