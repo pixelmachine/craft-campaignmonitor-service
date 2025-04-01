@@ -34,8 +34,8 @@
         "issues": "https://github.com/clearbold/craft-campaignmonitor-service/issues"
     },
     "extra": {
-        "name": "Campaign Monitor Service",
-        "handle": "cm-service",
+        "name": "Campaign Monitor Service (PM)",
+        "handle": "cm-service-pm",
         "hasCpSettings": true,
         "developer": "Clearbold",
         "developerUrl": "http://clearbold.com/",
